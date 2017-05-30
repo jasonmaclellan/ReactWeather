@@ -10,7 +10,7 @@ var Weather = React.createClass({
     }
   },
   handleSearch: function (location) {
-    var that = this;    
+    var that = this;
 
     this.setState({isLoading: true});
 
@@ -41,7 +41,7 @@ var Weather = React.createClass({
 
     return (
       <div>
-        <h1>Get Weather</h1>
+        <h1 className="text-centre">Get Weather</h1>
         <WeatherForm onSearch={this.handleSearch}/>
         {renderMessage()}
       </div>
